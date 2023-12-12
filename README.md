@@ -2,7 +2,7 @@
 
 <a href='https://arxiv.org/abs/xxx'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
 
-![](figures/super_imgs.pdf)
+![](figures/fig1.png)
 
 > **Compositional Inversion for Stable Diffusion Models**<br>
 > Xu-Lu Zhang<sup>1,2</sup>, Xiao-Yong Wei<sup>1,3</sup>, Jin-Lin Wu<sup>2,4</sup>, Tian-Yi Zhang<sup>1</sup>, Zhao-Xiang Zhang<sup>2,4</sup>, Zhen Lei<sup>2,4</sup>, Qing Li<sup>1</sup> <br>
@@ -87,9 +87,9 @@ python txt2img.py
 ## Results
 The sample results obtained from our proposed method:
 
-![](figures/single.pdf)
+![](figures/pretrained.png)
 
-![](figures/multi.pdf)
+![](figures/inverted.png)
 
 
 ## Citation
