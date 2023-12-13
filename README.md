@@ -6,7 +6,7 @@
 
 > **Compositional Inversion for Stable Diffusion Models**<br>
 > Xu-Lu Zhang<sup>1,2</sup>, Xiao-Yong Wei<sup>1,3</sup>, Jin-Lin Wu<sup>2,4</sup>, Tian-Yi Zhang<sup>1</sup>, Zhao-Xiang Zhang<sup>2,4</sup>, Zhen Lei<sup>2,4</sup>, Qing Li<sup>1</sup> <br>
-> <sup>1</sup>Department of Computing, Hong Kong Polytechnic University, <sup>2</sup>Center for Artificial Intelligence and Robotics, HKISI, CAS, <sup>3</sup>College of Computer Science, Sichuan University, <sup>4</sup>State Key Laboratory of Multimodal Artificial Intelligence Systems, CASIA
+> <sup>1</sup>Department of Computing, Hong Kong Polytechnic University, <br><sup>2</sup>Center for Artificial Intelligence and Robotics, HKISI, CAS, <br><sup>3</sup>College of Computer Science, Sichuan University, <br><sup>4</sup>State Key Laboratory of Multimodal Artificial Intelligence Systems, CASIA
 
 >**Abstract**: <br>
 > This paper explores the use of inversion methods, specifically Textual Inversion, to generate personalized images by incorporating concepts of interest provided by user images, such as pets or portraits. 
