@@ -11,6 +11,7 @@ from PIL import Image, ImageDraw, ImageFont
 import logging
 
 
+
 def compute_ca_loss(attn_maps_mid, attn_maps_up, bboxes, object_positions, device):
     loss = 0
     object_number = len(bboxes)

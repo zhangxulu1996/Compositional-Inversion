@@ -1,6 +1,7 @@
 export MODEL_NAME="CompVis/stable-diffusion-v1-4"
 export OUTPUT_DIR="./snapshot/compositional_custom_diffusion/cat/"
 
+
 accelerate launch --main_process_port=29503 \
   --gpu_ids=0 \
   train_compositional_custom_diffusion.py \

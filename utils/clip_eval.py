@@ -29,6 +29,7 @@ class CLIPEvaluator(object):
                 return 1.
         return 0.
 
+
     def tokenize(self, strings: list):
         return clip.tokenize(strings).to(self.device)
 

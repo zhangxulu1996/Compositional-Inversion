@@ -1,6 +1,7 @@
 export MODEL_NAME="runwayml/stable-diffusion-v1-5"
 export DATA_DIR="./data/reference_images/cat"
 
+
 accelerate launch --main_process_port=29501 \
   --gpu_ids=0 \
   train_compositional_textual_inversion.py \
