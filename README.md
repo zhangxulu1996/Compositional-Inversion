@@ -44,6 +44,7 @@ We conduct experiments on the concepts used in previous studies. You can find th
 Dreambooth and Custom Diffusion use a small set of real images to prevent overfitting. You can refer this [guidance](https://huggingface.co/docs/diffusers/training/custom_diffusion) to prepare the regularization dataset.
 
 The data directory structure should look as follows:
+```
 ├── real_images
 │   └── [concept name]
 │   │   ├── images
@@ -52,6 +53,7 @@ The data directory structure should look as follows:
 ├── reference_images
 │   └── [concept name]
 │   │   └── [reference images]
+```
 
 ## Usage
 

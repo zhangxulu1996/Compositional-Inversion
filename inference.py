@@ -14,6 +14,7 @@ from matplotlib import pyplot as plt
 import math
 import argparse
 
+
 BACKGROUND = ['barn']
 OBJ = ['cat', 'dog', 'chair', 'table', 'flower', 'wooden_pot']
 
