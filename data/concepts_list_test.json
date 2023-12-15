@@ -1,0 +1,12 @@
+[
+    {
+        "class_prompt":         "cat",
+        "init_prompt":          "cat",
+        "placeholder":          "<cute-cat>",
+        "instance_data_dir":    "../data/customization/reference_images/cat",
+        "class_data_dir":       "../data/customization/real_images/cat",
+        "2c_prompts":          ["../data/customization/2c_prompts/wooden_pot_cat.txt",
+                                "../data/customization/2c_prompts/cat_chair.txt",
+                                "../data/customization/2c_prompts/cat_dog_simple.txt"]
+    }
+]

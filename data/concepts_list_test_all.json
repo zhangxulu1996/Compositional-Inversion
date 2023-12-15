@@ -1,0 +1,87 @@
+[
+    {
+        "class_prompt":         "cat",
+        "init_prompt":          "cat",
+        "placeholder":          "<cute-cat>",
+        "instance_data_dir":    "../data/customization/reference_images/cat",
+        "class_data_dir":       "../data/customization/real_images/cat",
+        "2c_prompts":          ["../data/customization/2c_prompts/wooden_pot_cat.txt",
+                                "../data/customization/2c_prompts/cat_chair.txt",
+                                "../data/customization/2c_prompts/cat_dog_simple.txt"]
+    },
+    {
+        "class_prompt":         "dog",
+        "init_prompt":          "dog",
+        "placeholder":          "<black-dog>",
+        "instance_data_dir":    "../data/customization/reference_images/dog",
+        "class_data_dir":       "../data/customization/real_images/dog",
+        "2c_prompts":        ["../data/customization/2c_prompts/cat_dog_simple.txt",
+                              "../data/customization/2c_prompts/barn_dog.txt"]
+    },
+    {
+        "class_prompt":         "chair",
+        "init_prompt":          "chair",
+        "placeholder":          "<blue-chair>",
+        "instance_data_dir":    "../data/customization/reference_images/chair",
+        "class_data_dir":       "../data/customization/real_images/chair",
+        "2c_prompts":        ["../data/customization/2c_prompts/cat_chair.txt",
+                                "../data/customization/2c_prompts/table_chair.txt"]
+    },
+    {
+        "class_prompt":         "table",
+        "init_prompt":          "table",
+        "placeholder":          "<brown-table>",
+        "instance_data_dir":    "../data/customization/reference_images/table",
+        "class_data_dir":       "../data/customization/real_images/table",
+        "2c_prompts":        ["../data/customization/2c_prompts/table_chair.txt"]
+    },
+    {
+        "class_prompt":         "flower",
+        "init_prompt":          "flower",
+        "placeholder":          "<white-flower>",
+        "instance_data_dir":    "../data/customization/reference_images/flower",
+        "class_data_dir":       "../data/customization/real_images/flower",
+        "2c_prompts":        ["../data/customization/2c_prompts/wooden_pot_flower.txt"]
+    },
+    {
+        "class_prompt":         "barn",
+        "init_prompt":          "barn",
+        "placeholder":          "<brown-barn>",
+        "instance_data_dir":    "../data/customization/reference_images/barn",
+        "class_data_dir":       "../data/customization/real_images/barn",
+        "2c_prompts":        ["../data/customization/2c_prompts/barn_dog.txt"]
+    },
+    {
+        "class_prompt":         "wooden_pot",
+        "init_prompt":          "pot",
+        "placeholder":          "<wooden-pot>",
+        "instance_data_dir":    "../data/customization/reference_images/wooden_pot",
+        "class_data_dir":       "../data/customization/real_images/wooden_pot",
+        "2c_prompts":        ["../data/customization/2c_prompts/wooden_pot_cat.txt",
+                              "../data/customization/2c_prompts/wooden_pot_flower.txt"]
+    },
+    {
+        "class_prompt":         "cat_statue",
+        "init_prompt":          "statue",
+        "placeholder":          "<cat-statue>",
+        "instance_data_dir":    "../data/customization/reference_images/cat_statue",
+        "class_data_dir":       "../data/customization/real_images/cat_statue",
+        "2c_prompts":           []
+    },
+    {
+        "class_prompt":         "teapot",
+        "init_prompt":          "teapot",
+        "placeholder":          "<red-teapot>",
+        "instance_data_dir":    "../data/customization/reference_images/teapot",
+        "class_data_dir":       "../data/customization/real_images/teapot",
+        "2c_prompts":        []
+    },
+    {
+        "class_prompt":         "teddybear",
+        "init_prompt":          "bear",
+        "placeholder":          "<teddy-bear>",
+        "instance_data_dir":    "../data/customization/reference_images/teddybear",
+        "class_data_dir":       "../data/customization/real_images/teddybear",
+        "2c_prompts":        []
+    }
+]

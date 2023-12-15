@@ -1,0 +1,72 @@
+[
+    {
+        "instance_prompt":     "photo of a <cute-cat> cat",
+        "expected_class":       "cat",
+        "class_prompt":         "cat",
+        "instance_data_dir":    "./data/reference_images/cat",
+        "class_data_dir":       "./data/real_images/cat"
+    },
+    {
+        "instance_prompt":     "photo of a <black-dog> dog",
+        "expected_class":       "dog",
+        "class_prompt":         "dog",
+        "instance_data_dir":    "./data/reference_images/dog",
+        "class_data_dir":       "./data/real_images/dog"
+    },
+    {
+        "instance_prompt":     "photo of a <blue-chair> chair",
+        "expected_class":       "chair",
+        "class_prompt":         "chair",
+        "instance_data_dir":    "./data/reference_images/chair",
+        "class_data_dir":       "./data/real_images/chair"
+    },
+    {
+        "instance_prompt":     "photo of a <brown-table> table",
+        "expected_class":       "table",
+        "class_prompt":         "table",
+        "instance_data_dir":    "./data/reference_images/table",
+        "class_data_dir":       "./data/real_images/table"
+    },
+    {
+        "instance_prompt":     "photo of a <white-flower> flower",
+        "expected_class":       "flower",
+        "class_prompt":         "flower",
+        "instance_data_dir":    "./data/reference_images/flower",
+        "class_data_dir":       "./data/real_images/flower"
+    },
+    {
+        "instance_prompt":     "photo of a <brown-barn> barn",
+        "expected_class":       "barn",
+        "class_prompt":         "barn",
+        "instance_data_dir":    "./data/reference_images/barn",
+        "class_data_dir":       "./data/real_images/barn"
+    },
+    {
+        "instance_prompt":     "photo of a <wooden-pot> wooden pot",
+        "expected_class":       "pot",
+        "class_prompt":         "pot",
+        "instance_data_dir":    "./data/reference_images/wooden_pot",
+        "class_data_dir":       "./data/real_images/wooden_pot"
+    },
+    {
+        "instance_prompt":     "photo of a <cat-statue> cat statue",
+        "expected_class":       "statue",
+        "class_prompt":         "cat_statue",
+        "instance_data_dir":    "./data/reference_images/cat_statue",
+        "class_data_dir":       "./data/real_images/cat_statue"
+    },
+    {
+        "instance_prompt":     "photo of a <red-teapot> teapot",
+        "expected_class":       "teapot",
+        "class_prompt":         "teapot",
+        "instance_data_dir":    "./data/reference_images/teapot",
+        "class_data_dir":       "./data/real_images/teapot"
+    },
+    {
+        "instance_prompt":     "photo of a <teddy-bear> teddybear",
+        "expected_class":       "bear",
+        "class_prompt":         "teddybear",
+        "instance_data_dir":    "./data/reference_images/teddybear",
+        "class_data_dir":       "./data/real_images/teddybear"
+    }
+]

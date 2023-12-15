@@ -1,6 +1,6 @@
 # Compositional Inversion for Stable Diffusion Models (AAAI 2024)
 
-<a href='https://arxiv.org/abs/xxx'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
+<a href='https://arxiv.org/abs/2312.08048'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
 
 ![](figures/fig1.png)
 
@@ -20,18 +20,15 @@ Experimental results demonstrate the effectiveness of our proposed approach in m
 ## Description
 This repo contains the official implementation of Compositional Inversion. Our code is built on diffusers.
 
-<!-- ## Updates
-**29/08/2022** Merge embeddings now supports SD embeddings. Added SD pivotal tuning code (WIP), fixed training duration, checkpoint save iterations.
-**21/08/2022** Code released! -->
-
 ## TODO:
-- [ ] Release code!
+- [x] Release code!
+- [ ] Support mutiple anchors for semantic inversion
+- [ ] Support automatic layout generation for spatial inversion
 - [ ] Release pre-trained embeddings
 
 
 ## Setup
-
-To set up their environment, please run:
+To set up the environment, please run:
 
 ```
 git clone https://github.com/zhangxulu1996/Compositional-Inversion.git
@@ -41,48 +38,58 @@ conda activate compositonal_inversion
 pip install -r requirements.txt
 ```
 
+## Data Preparation
+We conduct experiments on the concepts used in previous studies. You can find the code and resources for the "Custom Diffusion" concept [here](https://github.com/adobe-research/custom-diffusion) and for the "Textual Inversion" concept [here](https://github.com/rinongal/textual_inversion). The dataset should be put in /data/real_images/
+
+Dreambooth and Custom Diffusion use a small set of real images to prevent overfitting. You can refer this [guidance](https://huggingface.co/docs/diffusers/training/custom_diffusion) to prepare the regularization dataset.
+
+The data directory structure should look as follows:
+- data/
+  - real_images/
+    - [concept name]
+      - images/
+        - [regularization images]
+      - images.txt
+  - reference_images/
+    - [concept name]
+      - [reference images]
+
 ## Usage
 
-### Inversion
+### Training with Semantic Inversion
 
 To invert an image set based on Textual Inversion, run:
 
 ```
-python run_textual_inversion.py
+sh scripts/compositional_textual_inversion.sh
 ```
-
-<!-- where the initialization word should be a single-token rough description of the object (e.g., 'toy', 'painting', 'sculpture'). If the input is comprised of more than a single token, you will be prompted to replace it.
-
-Please note that `init_word` is *not* the placeholder string that will later represent the concept. It is only used as a beggining point for the optimization scheme.
-
-In the paper, we use 5k training iterations. However, some concepts (particularly styles) can converge much faster.
-
-To run on multiple GPUs, provide a comma-delimited list of GPU indices to the --gpus argument (e.g., ``--gpus 0,3,7,8``)
-
-Embeddings and output images will be saved in the log directory.
-
-See `configs/latent-diffusion/txt2img-1p4B-finetune.yaml` for more options, such as: changing the placeholder string which denotes the concept (defaults to "*"), changing the maximal number of training iterations, changing how often checkpoints are saved and more. -->
 
 To invert an image set based on Custom Diffusion, run:
 
 ```
-python run_custom_diffusion.py
+sh scripts/compositional_custom_diffusion.sh
 ```
 
 To invert an image set based on DreamBooth, run:
 
 ```
-python run_dreambooth.py
+sh scripts/compositional_dreambooth.sh
 ```
 
-
-### Generation
+### Generation with Spatial Inversion
 
 To generate new images of the learned concept, run:
 ```
-python txt2img.py
+python inference.py 
+    --model_name="custom_diffusion" \
+    --spatial_inversion \
+    --checkpoint="snapshot/compositional_custom_diffusion/cat" \
+    --file_names="<cute-cat.bin>"
 ```
+Additionally, if you prefer a Jupyter Notebook interface, you can refer to the "demo.ipynb" file. This notebook provides a demonstration on generating new images using the semantic inversion and spatial inversion.
 
+### Reproduce Results
+To reproduce the results in the paper, please refer to the "reproduce.ipynb" notebook. It contains the necessary code and instructions.
 
 ## Results
 The sample results obtained from our proposed method:
@@ -97,5 +104,12 @@ The sample results obtained from our proposed method:
 If you make use of our work, please cite our paper:
 
 ```
-
+@misc{zhang2023compositional,
+      title={Compositional Inversion for Stable Diffusion Models}, 
+      author={Xu-Lu Zhang and Xiao-Yong Wei and Jin-Lin Wu and Tian-Yi Zhang and Zhaoxiang Zhang and Zhen Lei and Qing Li},
+      year={2023},
+      eprint={2312.08048},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 ```
