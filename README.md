@@ -39,7 +39,7 @@ pip install -r requirements.txt
 ```
 
 ## Data Preparation
-We conduct experiments on the concepts used in previous studies. You can find the code and resources for the "Custom Diffusion" concept [here](https://github.com/adobe-research/custom-diffusion) and for the "Textual Inversion" concept [here](https://github.com/rinongal/textual_inversion). The dataset should be put in /data/real_images/
+We conduct experiments on the concepts used in previous studies. You can find the code and resources for the "Custom Diffusion" concept [here](https://github.com/adobe-research/custom-diffusion) and for the "Textual Inversion" concept [here](https://github.com/rinongal/textual_inversion).
 
 Dreambooth and Custom Diffusion use a small set of real images to prevent overfitting. You can refer this [guidance](https://huggingface.co/docs/diffusers/training/custom_diffusion) to prepare the regularization dataset.
 
@@ -59,19 +59,19 @@ The data directory structure should look as follows:
 
 ### Training with Semantic Inversion
 
-To invert an image set based on Textual Inversion, run:
+To invert an image based on Textual Inversion, run:
 
 ```
 sh scripts/compositional_textual_inversion.sh
 ```
 
-To invert an image set based on Custom Diffusion, run:
+To invert an image based on Custom Diffusion, run:
 
 ```
 sh scripts/compositional_custom_diffusion.sh
 ```
 
-To invert an image set based on DreamBooth, run:
+To invert an image based on DreamBooth, run:
 
 ```
 sh scripts/compositional_dreambooth.sh
@@ -87,10 +87,10 @@ python inference.py
     --checkpoint="snapshot/compositional_custom_diffusion/cat" \
     --file_names="<cute-cat.bin>"
 ```
-Additionally, if you prefer a Jupyter Notebook interface, you can refer to the "demo.ipynb" file. This notebook provides a demonstration on generating new images using the semantic inversion and spatial inversion.
+Additionally, if you prefer a Jupyter Notebook interface, you can refer to the [**demo**](demo.ipynb) file. This notebook provides a demonstration on generating new images using the semantic inversion and spatial inversion.
 
 ### Reproduce Results
-To reproduce the results in the paper, please refer to the "reproduce.ipynb" notebook. It contains the necessary code and instructions.
+To reproduce the results in the paper, please refer to the [**reproduce**](reproduce.ipynb) notebook. It contains the necessary code and instructions.
 
 ## Results
 The sample results obtained from our proposed method:
