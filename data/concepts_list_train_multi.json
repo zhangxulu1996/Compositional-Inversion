@@ -1,0 +1,16 @@
+[
+    {
+        "instance_prompt":     "photo of a <cute-cat> cat",
+        "expected_class":       "cat",
+        "class_prompt":         "cat",
+        "instance_data_dir":    "./data/reference_images/cat",
+        "class_data_dir":       "./data/real_images/cat"
+    },
+    {
+        "instance_prompt":     "photo of a <blue-chair> chair",
+        "expected_class":       "chair",
+        "class_prompt":         "chair",
+        "instance_data_dir":    "./data/reference_images/chair",
+        "class_data_dir":       "./data/real_images/chair"
+    }
+]

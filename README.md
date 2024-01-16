@@ -89,6 +89,29 @@ python inference.py
 ```
 Additionally, if you prefer a Jupyter Notebook interface, you can refer to the [**demo**](demo.ipynb) file. This notebook provides a demonstration on generating new images using the semantic inversion and spatial inversion.
 
+### Subject-driven image composition
+To invert two concepts based on Textual Inversion, you should separately invert each concept according to the script provided above.
+
+To invert two concept based on Custom Diffusion, run 
+```
+sh scripts/compositional_custom_diffusion_multi.sh
+```
+
+To invert two concept based on Dreambooth, run 
+```
+sh scripts/compositional_dreambooth_multi.sh
+```
+
+To generate new images of two learned concepts, run:
+```
+python inference.py 
+    --model_name="custom_diffusion" \
+    --spatial_inversion \
+    --checkpoint="snapshot/compositional_custom_diffusion/cat+chair" \
+    --file_names="<cute-cat>.bin,<blue-chair>.bin"
+```
+
+
 ### Reproduce Results
 To reproduce the results in the paper, please refer to the [**reproduce**](reproduce.ipynb) notebook. It contains the necessary code and instructions.
 
