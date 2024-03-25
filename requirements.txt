@@ -1,10 +1,10 @@
-pip install torch==2.0.1 
-pip install torchvision==0.15.2 
+pip install torch==2.0.1
+pip install torchvision==0.15.2
 pip install torchaudio==2.0.2
 pip install diffusers["torch"]==0.17.0
 pip intall transformers==4.31.0
 pip install accelerate==0.21.0
-pip intall pycocotools pandas matplotlib seaborn scipy omegaconf timm 
+pip intall pycocotools pandas matplotlib seaborn scipy omegaconf timm
 pip install Pillow
 pip install hydra-core
 pip install opencv-python
