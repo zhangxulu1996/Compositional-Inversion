@@ -33,7 +33,7 @@ To set up the environment, please run:
 ```
 git clone https://github.com/zhangxulu1996/Compositional-Inversion.git
 cd Compositional-Inversion
-conda env create -n compositonal_inversion python=3.9
+conda create -n compositonal_inversion python=3.9
 conda activate compositonal_inversion
 pip install -r requirements.txt
 ```
