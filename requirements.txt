@@ -1,12 +1,20 @@
-pip install torch==2.0.1
-pip install torchvision==0.15.2
-pip install torchaudio==2.0.2
-pip install diffusers["torch"]==0.17.0
-pip intall transformers==4.31.0
-pip install accelerate==0.21.0
-pip intall pycocotools pandas matplotlib seaborn scipy omegaconf timm
-pip install Pillow
-pip install hydra-core
-pip install opencv-python
-pip install ftfy regex tqdm
-pip install git+https://github.com/openai/CLIP.git
+torch==2.0.1
+torchvision==0.15.2
+torchaudio==2.0.2
+diffusers==0.17.0
+transformers==4.31.0
+accelerate==0.21.0
+pycocotools
+pandas
+matplotlib
+seaborn
+scipy
+omegaconf
+timm
+Pillow
+hydra-core
+opencv-python
+ftfy
+regex
+tqdm
+git+https://github.com/openai/CLIP.git
