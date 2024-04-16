@@ -7,10 +7,10 @@
         "class_data_dir":       "./data/real_images/cat"
     },
     {
-        "instance_prompt":     "photo of a <blue-chair> chair",
-        "expected_class":       "chair",
-        "class_prompt":         "chair",
-        "instance_data_dir":    "./data/reference_images/chair",
-        "class_data_dir":       "./data/real_images/chair"
+        "instance_prompt":     "photo of a <black-dog> dog",
+        "expected_class":       "dog",
+        "class_prompt":         "dog",
+        "instance_data_dir":    "./data/reference_images/dog",
+        "class_data_dir":       "./data/real_images/dog"
     }
 ]

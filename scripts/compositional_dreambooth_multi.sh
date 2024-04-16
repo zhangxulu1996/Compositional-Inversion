@@ -1,5 +1,5 @@
 export MODEL_NAME="CompVis/stable-diffusion-v1-4"
-export OUTPUT_DIR="./snapshot/compositional_dreambooth/cat_chair/"
+export OUTPUT_DIR="./snapshot/compositional_dreambooth/cat+dog/"
 
 
 accelerate launch --main_process_port=29503 \
@@ -9,7 +9,7 @@ accelerate launch --main_process_port=29503 \
   --output_dir=$OUTPUT_DIR \
   --concepts_list='./data/concepts_list_train_multi.json' \
   --with_prior_preservation --real_prior --prior_loss_weight=1.0 \
-  --modifier_token="<cute-cat>+<blue-chair>" \
+  --modifier_token="<cute-cat>+<black-dog>" \
   --resolution=512  \
   --train_batch_size=1  \
   --learning_rate=1e-5  \
