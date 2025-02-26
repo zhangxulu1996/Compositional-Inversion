@@ -20,12 +20,6 @@ Experimental results demonstrate the effectiveness of our proposed approach in m
 ## Description
 This repo contains the official implementation of Compositional Inversion. Our code is built on diffusers.
 
-## TODO:
-- [x] Release code!
-- [ ] Support mutiple anchors for semantic inversion
-- [ ] Support automatic layout generation for spatial inversion
-- [ ] Release pre-trained embeddings
-
 
 ## Setup
 To set up the environment, please run:
